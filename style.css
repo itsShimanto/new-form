@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+main {
+  width: 100svw;
+  height: 100svh;
+  display: flex;
+}
+
+.first-section {
+  border: 1px solid black;
+  flex: calc(1/2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.logo{
+  display:flex;
+  max-height:55px;
+  width:90%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding:2rem
+}
+
+.main-logo {
+  width: 3rem;
+  height: 3rem;
+  background-color: crimson;
+  border-radius: 50%;
+  position: relative;
+  margin-right:3px
+}
+
+.main-logo::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(90deg);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform-origin: center;
+  margin-left:3px;
+}
+
+.first-middle-section{
+  display:flex;
+  flex-direction: column;
+  width:60%;
+}
+
+.box{
+  height:2rem;
+  margin-bottom:0.9rem;
+  outline: none;
+  background-color: transparent;
+  border:1px solid silver
+}
+
+.box:focus{
+  outline:1px solid hsl(39, 100%, 30%)
+}
+
+label{
+  margin-bottom:0.25rem
+}
+
+input[type=submit]{
+  background-color: cyan;
+  height:2rem;
+  border:none;
+  cursor: pointer;
+  margin-bottom:3em
+}
+
+input[type=submit]:hover{
+  background-color: hsl(180, 100%, 44%);
+}
+
+input[type=submit]:active{
+  background-color: hsl(180, 100%, 40%);
+}
+
+.aside{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside a{
+  text-decoration: none;
+  margin-bottom:0.7rem;
+}
+
+.create{
+  width:75%;
+  height:2.5rem;
+  background-color: white;
+  border:1.5px solid silver;
+  cursor:pointer;
+  transition:0.37s ease-in;
+  color:black
+}
+
+.create:hover{
+  background-color: black;
+  color:white
+}
+
+.line-div{
+  width:100%;
+  display:flex;
+  align-items: center;
+  margin:1.5rem 0;
+  justify-content: center;
+}
+
+.line{
+  border:0.4px solid white;
+  width:30%;
+  display:inline-block;
+}
+
+strong{
+  margin:0 0.5rem;
+}
+
+.services{
+  display:flex;
+  justify-content: center;
+  
+}
+
+.services a{
+  padding-left:4px;
+  text-decoration: none;
+  color:rgb(237, 32, 73)
+}
+
+/* second section */
+
+.second-section {
+  flex: 1;
+  background-image:url(ai-generated-blue-and-violet-beams-of-bright-laser-light-shining-on-black-background-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second-section h1{
+  font-size:2rem;
+  margin-bottom:0.6rem;
+  text-align:center
+}
+
+.start{
+  padding:0.4rem 0.9rem;
+  background-color: cyan;
+  border:none;
+  cursor:pointer;
+}
+
+.start:hover{
+  background-color: hsl(180, 100%, 46%);
+}
+
+.start:active{
+  background-color: hsl(180, 100%, 42%);
+}
+
+@media (max-width:1000px){
+  .first-section{
+    flex:calc(1/1.5)
+  }
+}
+@media (max-width:510px){
+  main{
+    flex-direction: column;
+    overflow:scroll;
+  }
+
+  .second-section{
+    height:20rem
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
